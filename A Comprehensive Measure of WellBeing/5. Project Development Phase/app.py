@@ -9,8 +9,10 @@ static_dir = os.path.join(template_dir, "static")
 
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
 
-# Load model from the same directory
+# Load model from the same directory or fallback locations
 model_path = os.path.join(base_dir, "model.pkl")
+if not os.path.exists(model_path):
+    model_path = os.path.join(project_dir, "6.Project Testing", "model.pkl")
 
 # If model doesn't exist, we will warn but try to load
 if os.path.exists(model_path):
