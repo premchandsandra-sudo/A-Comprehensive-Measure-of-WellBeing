@@ -35,7 +35,7 @@ Start the Flask web application locally:
 python "5. Project Development Phase/app.py"
 ```
 After running the command, open your web browser and navigate to:
-👉 **[http://127.0.0.1:5000](http://127.0.0.1:5000)**
+👉 **(https://a-comprehensive-measure-of-wellbein.vercel.app/)**
 
 ---
 
